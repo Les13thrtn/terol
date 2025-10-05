@@ -1,0 +1,248 @@
+.header {
+    margin-top: 1.25rem;
+    position: sticky;
+    top: 0.25rem;
+    z-index: 99;
+    &__content {
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0.75rem;
+        border: 1px solid var(--Neutral-100);
+        background: var(--Base-White);
+    }
+    &__logo {
+        width: 5rem;
+        height: 1.71875rem;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__menu {
+        flex: 1;
+        height: 2.25rem;
+        display: flex;
+        align-items: center;
+    }
+    &__nav {
+        margin: 0 auto;
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            &.with-sub {
+                position: relative;
+                .header__nav-link {
+                    &:after {
+                        content: '';
+                        display: block;
+                        width: 1rem;
+                        height: 1rem;
+                        aspect-ratio: 1/1;
+                        background-color: currentColor;
+                        mask-position: center;
+                        mask-repeat: no-repeat;
+                        mask-size: contain;
+                        mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='17' viewBox='0 0 16 17' fill='none'%3e%3cpath d='M4 6.5L8 10.5L12 6.5' stroke='%23222222' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+                        transition: 0.3s;
+                    }
+                }
+                
+            }
+            &-sub {
+                display: none;
+                padding: 0.5rem;
+                position: absolute;
+                top: 99%;
+                left: 0%;
+                min-width: 14rem;
+                width: fit-content;
+                border-radius: 0.5rem;
+                border: 1px solid var(--Neutral-100);
+                background: var(--Base-White);
+                z-index: 15;
+                &-item {
+                    width: 100%;
+                }
+                &-link {
+                    display: block;
+                    width: 100%;
+                    padding: 0.5rem 0.5rem;
+                    color: var(--Base-Dark);
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    border-radius: 0.35rem;
+                    transition: 0.3s;
+                    white-space: nowrap;
+                    &:hover {
+                        background: var(--Neutral-100);
+                    }
+                }
+            }
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.625rem 0.5rem;
+            color: var(--Base-Dark);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: var(--Brand-800);
+            }
+        }
+    }
+    &__lang  {
+        margin-right: 0.5rem;
+        height: 2.25rem;
+    }
+    &__btn  {   
+        height: 2.25rem;
+    }
+    &__burger {
+        display: none;
+    }
+}
+    
+@media (max-width: 768px)  {
+    .header {
+        margin-top: 0.5rem;
+        top: 0.5rem;
+        &__content {
+            padding: 0.75rem 0.75rem 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 0.75rem;
+            border: 1px solid var(--Neutral-100);
+            background: var(--Base-White);
+        }
+        &__logo {
+            position: relative;
+            z-index: 20;
+            width: 5rem;
+            height: 1.71875rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &__menu  {
+            position: absolute;
+            left: -100%;
+            top: -0.75rem;
+            padding: 5.5rem 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            width: 100%;
+            height: 100vh;
+            background: var(--Base-White);
+            transition: 0.3s;
+            opacity: 0;
+            &.is-active {
+                left: 0;
+                opacity: 1;
+            }
+        }
+        &__nav {
+            width: 100%;
+            &-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            &-item {
+                width: 100%;
+                &.with-sub {
+                    position: relative;
+                    .header__nav-link {
+                        justify-content: space-between;
+                        &:after {
+                            width: 1.25rem;
+                            height: 1.25rem;
+                        }
+                    }
+                    &.is-active {
+                        .header__nav-link:after {
+                            transform: scale(1, -1);
+                        }
+                    }
+                    
+                }
+                &-sub {
+                    display: none;
+                    padding: 0rem;
+                    position: static;
+                    top: unset;
+                    left: unset;
+                    width: 100%;
+                    min-width: 100%;
+                    transform:  unset;
+                    border-radius: 0.5rem;
+                    border: unset;
+                    background: var(--Base-White);
+                    z-index: 15;
+                    &-item {
+                        width: 100%;
+                    }
+                    &-link {
+                        display: block;
+                        width: 100%;
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 0.35rem;
+                        transition: 0.3s;
+                        &:hover {
+                            background: var(--Neutral-100);
+                        }
+                    }
+                }
+            }
+            &-link {
+                font-size: 1rem;
+                &:hover {
+                    color: var(--Base-Dark);
+                }
+            }
+        }
+        &__lang  {
+            margin: 0;
+            height: fit-content;
+        }
+        &__btn  {   
+            margin-left: auto;
+            margin-right: 0.75rem;
+            position: relative;
+            z-index: 20;
+        }
+        &__burger {
+            display: block;
+            position: relative;
+            z-index: 20;
+            height: 2.25rem;
+            aspect-ratio: 1/1;
+            background: var(--Brand-900);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3e%3cpath d='M7.5 3.25C7.5 2.69772 7.05228 2.25 6.5 2.25H3.25C2.69772 2.25 2.25 2.69772 2.25 3.25V6.5C2.25 7.05228 2.69772 7.5 3.25 7.5H6.5C7.05228 7.5 7.5 7.05228 7.5 6.5V3.25Z' stroke='%23FDFDFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.75 3.25C15.75 2.69772 15.3023 2.25 14.75 2.25H11.5C10.9477 2.25 10.5 2.69772 10.5 3.25V6.5C10.5 7.05228 10.9477 7.5 11.5 7.5H14.75C15.3023 7.5 15.75 7.05228 15.75 6.5V3.25Z' stroke='%23FDFDFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.75 11.5C15.75 10.9477 15.3023 10.5 14.75 10.5H11.5C10.9477 10.5 10.5 10.9477 10.5 11.5V14.75C10.5 15.3023 10.9477 15.75 11.5 15.75H14.75C15.3023 15.75 15.75 15.3023 15.75 14.75V11.5Z' stroke='%23FDFDFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M7.5 11.5C7.5 10.9477 7.05228 10.5 6.5 10.5H3.25C2.69772 10.5 2.25 10.9477 2.25 11.5V14.75C2.25 15.3023 2.69772 15.75 3.25 15.75H6.5C7.05228 15.75 7.5 15.3023 7.5 14.75V11.5Z' stroke='%23FDFDFD' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+            border-radius: 0.5rem;
+            transition: 0.3s;
+            &.is-active {
+                background-size: 100%;
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='36' height='36' viewBox='0 0 36 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='35' height='35' rx='7.5' fill='white'/%3e%3crect x='0.5' y='0.5' width='35' height='35' rx='7.5' stroke='%23D8D8D8'/%3e%3cpath d='M22.5 13.5L13.5 22.5M13.5 13.5L22.5 22.5' stroke='%232E2E2E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+            }
+        }
+    }
+}
