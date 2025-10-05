@@ -1,0 +1,88 @@
+.reviews {
+    margin: 7.5rem 0;
+    &__head {
+        margin-bottom: 1.62rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+
+    }
+    &__arrows {
+
+    }
+
+    &__item {
+        padding: 1rem;
+        border-radius: 0.75rem;
+        border: 1px solid var(--Neutral-100, #E9EFF5);
+        background: #FFF;
+        &-title {
+            margin-bottom: 0.5rem;
+            font-size: 1.0625rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; 
+        }
+        &-content {
+            &-text {
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                opacity: 0.8;
+                -webkit-line-clamp: 8; 
+                display: -webkit-box; 
+                -webkit-box-orient: vertical; 
+                overflow: hidden; 
+            }
+            &-more {
+                margin-top: 0.62rem;
+                width: 100%;
+            }
+        }
+        &-auth {
+            margin-top: 0.62rem;
+            padding-top: 0.62rem;
+            color:  var(--Base-Dark-Opacity);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 1.225rem */
+            border-top: 1px solid var(--Neutral-200);
+        }
+    }
+                             
+}
+       
+@media (max-width: 768px) {
+    .reviews {
+        margin: 3.5rem 0;
+        overflow: hidden;
+        &__head {
+            margin-bottom: 1.5rem;
+        }
+        &__swiper {
+            overflow: visible;
+        }
+        &__item {
+            padding: 0.75rem;
+            &-title {
+                font-size: 0.875rem;
+            }
+            &-content {
+                &-text {
+                    font-size: 0.75rem;
+                }
+            }
+            &-auth {
+                margin-top: 0.5rem;
+                padding-top: 0.5rem;
+                font-size: 0.75rem;
+                font-style: normal;
+            }
+        }
+                                
+    }
+}

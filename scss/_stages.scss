@@ -1,0 +1,184 @@
+.stages {
+    margin: 7.5rem 0;
+    &__title {
+        margin-bottom: 1.75rem;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.25rem;
+    }   
+    &__card {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1.56;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        &-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top left;
+            }
+        }
+        &-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: 0.3s;
+            + img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top left;
+            }
+        }
+        &-main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            z-index: 2;
+        }
+        &-num {
+            margin-top: -1px;
+            margin-left: -1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            aspect-ratio: 1/1;
+            color: var(--Brand-800);
+            font-family: var(--font-Cuprum);
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            transition: 0.3s;
+        }
+        &-title {
+            position: absolute;
+            top: 0.75rem;
+            right: 0.75rem;
+            width: 57%;
+            font-size: 1.0625rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+            transition: 0.3s;
+        }
+        &-text {
+            padding: 0.75rem;
+            margin-top: auto;
+            display: grid;
+            gap: 0.25rem;
+            &-item {
+                width: 100%;
+                padding: 0.625rem 0.75rem;
+                color:  var(--Base-Dark-Opacity);
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%; /* 1.05rem */
+                border-radius: 0.5rem;
+                background: rgba(114, 159, 190, 0.10);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+@media (min-width: 769px)  {
+    .stages {
+        &__card  {
+            &:hover {
+                .stages__card-hover {
+                    opacity: 1;
+                }
+            
+            }
+            &.light:hover {
+                .stages__card-text-item {
+                    background: rgba(255, 255, 255, 0.50);
+                }
+            }
+            &.dark:hover {
+                .stages__card-text {
+                    color: var(--Base-White);
+                }
+                .stages__card-num,
+                .stages__card-title {
+                    color: #fff;
+                }
+                .stages__card-text-item {
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.10);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px)  {
+    .stages {
+        margin: 3.5rem 0;
+        &__title {
+            margin-bottom: 1.5rem;
+        }
+        &__content {
+            grid-template-columns: 1fr;
+        }   
+        &__card {
+            aspect-ratio: unset;
+            height: fit-content;
+            &-back,
+            &-hover {
+                display: none;
+            }
+            &-main {
+                padding: 0.5rem;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 1rem;
+                border-radius: 0.75rem;
+                border: 1px solid var(--Neutral-100);
+                background: #FFF;
+            }
+            &-num {
+                margin: 0;
+                width: 3rem;
+                font-size: 2rem;
+                border-radius: 0.75rem;
+                border: 1px solid var(--Neutral-100, #E9EFF5);
+                background: #FFF;
+            }
+            &-title  {
+                position: static;
+                width: calc(100% - 4rem);
+                font-size: 1rem;
+            }
+            &-text {
+                padding: 0;
+                width: 100%;
+                &-item {
+                    padding: 0.5rem;
+                    font-size: 0.875rem;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
