@@ -115,7 +115,7 @@
     }
 }
     
-@media (max-width: 768px)  {
+@media (max-width: 767px)  {
     .header {
         margin-top: 0.5rem;
         top: 0.5rem;
@@ -203,6 +203,8 @@
                         padding: 0.25rem 0.5rem;
                         border-radius: 0.35rem;
                         transition: 0.3s;
+                        font-size: 1rem;
+                        white-space: unset;
                         &:hover {
                             background: var(--Neutral-100);
                         }

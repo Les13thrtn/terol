@@ -3,7 +3,9 @@
   --Base-Dark: #222;
   --Base-Dark-Opacity: rgba(34, 34, 34, 0.8);
 
+  --Brand-50: #EDF0FF;
   --Brand-200: #C5CAFF;
+  --Brand-300:  #A1A7FF;
   --Brand-800: #412BA8;
   --Brand-900: #362980;
   --Brand-950: #22194D;
@@ -11,6 +13,8 @@
   --Neutral-50: #F8FAFC;
   --Neutral-100: #E9EFF5;
   --Neutral-200: #CEDDE9;
+  --Neutral-300: #A3C1D6;
+  --Neutral-400: #729FBE;
   --Neutral-500: #5083A7;
   --font-Cuprum: 'Cuprum';
 }
@@ -242,9 +246,58 @@ img.loaded {
   background: none;
 }
 
+.breadcrumbs {
+  margin: 1.25rem 0 2.5rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+	&__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--Neutral-400);
+    transition: 0.3s;
+    &:after {
+      content: '/';
+      color: currentColor;
+      transition: 0.3s;
+    }
+    &:hover {
+      color: var(--Neutral-500);
+    }
+  }
+	&__text {
+
+  }
+}
+
+.tick-list {
+  li {
+    position: relative;
+    padding-left: 2rem;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0.125rem;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M20 6L9 17L4 12' stroke='%23412BA8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+    }
+  }
+}
+
 @media (max-width: 768px)  {
   .title {
-    font-size: 2.125rem;
+    font-size: 2.375rem;
   }
 
   .lang {
@@ -263,5 +316,9 @@ img.loaded {
     span {
       font-size: 0.65rem;
     }
+  }
+
+  .breadcrumbs {
+    margin: 1rem 0 1.75rem;
   }
 }

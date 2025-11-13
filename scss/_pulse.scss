@@ -24,7 +24,7 @@
         &-left {
             display: flex;
             gap: 1rem;
-            width: 40%;
+            width: 41%;
             transition: 0.35s;
         }
         &-icon {
@@ -78,12 +78,12 @@
         }
     }
 }  
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .pulse {
-        margin: 3.5rem 0;
+        margin: 5rem 0;
         &__title {
             margin-bottom: 0.5rem;
-            font-size: 0.875rem;
+            font-size: 1.0625rem;
         }
         &__item {
             padding: 1rem 0;
@@ -97,15 +97,15 @@
             }
             &-icon {
                 margin-top: 0;
-                width: 2rem;
-                height: 2rem;
+                width: 2.5rem;
+                height: 2.5rem;
             }
             &-title {
-                font-size: 1.5rem;
+                font-size: 1.75rem;
             }
             &-text {
                 width: 100%;
-                font-size: 0.875rem;
+                font-size: 1.0625rem;
             }
         }
     }

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terol - Provider of IT Solutions</title>
+    <meta name="description" content="Provider of the best IT solutions since 2023. We build reliable and scalable infrastructure for businesses.">
+
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo">
+                    <img src="./img/logo.svg"  alt="Terol logo, go to homepage">
+                </a>
+                <div class="header__menu">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list" aria-label="Main navigation">
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">About</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Bussiness vision</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Contact us</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Products</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">AI Inference Orchestration</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">MLOps Platform</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Client Computing</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Servers & Storage</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Components</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">AI & ML</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Cybersecurity</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Backup & DR</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Gaming</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Sustainability Solutions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Services & Support</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Technical Services</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Advanced Services</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Training and Education</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Support center</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <button class="lang__head" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Language selector, current language: English">
+                            <div class="lang__head-content">
+                                <div class="lang__head-flag">
+                                    <img src="./img/GB.png"  alt="Flag of the United Kingdom">
+                                </div>
+                                <div class="lang__head-name">En</div>
+                            </div>
+                        </button>
+                        <ul class="lang__body" id="lang-menu" role="menu">
+                            <li role="none">
+                                <a href="" class="lang__item" role="menuitem">
+                                    <div class="lang__item-flag">
+                                        <img src="./img/Thailand.png" alt="Flag of Thailand">
+                                    </div>
+                                    <div class="lang__item-name">Th</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#feedback" class="header__btn btn btn-purple popup-open">
+                    <span>Contact sales</span>
+                </a>
+                <button class="header__burger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu-id">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="breadcrumbs">
+			<div class="container">
+				<div class="breadcrumbs__list">
+					<a href="/" class="breadcrumbs__item">Main</a>
+					<span class="breadcrumbs__text">Business vision</span>
+				</div>
+			</div>
+		</section>
+
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__content">
+                    <div class="page-hero__top">
+                        <div class="page-hero__top-left">
+                            <h1 class="page-hero__title">Business vision</h1>
+                            <div class="page-hero__descr">
+                                Terol is your reliable partner in the world of digital innovation!
+                            </div>
+                        </div>
+                        <div class="page-hero__top-text">
+                            We strive to become a leading provider of comprehensive IT solutions and services in the Southeast Asian market, providing our clients with reliability, efficiency, and technological excellence. Our mission is to help companies reach new heights through the implementation of modern digital platforms and the integration of advanced technologies.
+                        </div>
+                    </div>
+                    <div class="page-hero__img">
+                        <picture class="lozad" data-iesrc="./img/page-hero-mob.jpg" data-alt="">
+                            <source srcset="./img/page-hero.jpg" media="(min-width: 768px)">
+                            <source srcset="./img/page-hero-mob.jpg" media="(min-width: 300px)">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about">
+            <div class="container">
+                <div class="about__content">
+                    <h2 class="about__title">Our view on business</h2>
+                    <div class="about__main about__main-regular title">
+                        Terol sees the future of business as a close connection between digital transformation and <span>sustainable development</span>
+                    </div>
+                    <div class="about__info w-60-40">
+                        <p>We are convinced that the successful business of tomorrow is one that promptly implements digital technologies and optimizes processes.</p>
+                        <p>This is how it creates sustainable competitive advantages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <div class="container">
+                <div class="offers__content">
+                    <h2 class="offers__title title">What we offer our partners</h2>
+                    <div class="offers__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="offers__item light swiper-slide">
+                                <div class="offers__item-back">
+                                    <img class="lozad" data-src="./img/card-back-small.svg" alt="">
+                                </div>
+                                <div class="offers__item-hover">
+                                    <img class="lozad" data-src="./img/card-hover-light-small.png" alt="">
+                                </div>
+                                <div class="offers__item-main">
+                                    <div class="offers__item-num">01</div>
+                                    <div class="offers__item-title">Comprehensive solutions</div>
+                                    <div class="offers__item-text">
+                                        <p>From infrastructure design to the implementation of complex integrated enterprise management systems</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers__item dark swiper-slide">
+                                <div class="offers__item-back">
+                                    <img class="lozad" data-src="./img/card-back-small.svg" alt="">
+                                </div>
+                                <div class="offers__item-hover">
+                                    <img class="lozad" data-src="./img/card-hover-dark-small.png" alt="">
+                                </div>
+                                <div class="offers__item-main">
+                                    <div class="offers__item-num">02</div>
+                                    <div class="offers__item-title">A customized approach</div>
+                                    <div class="offers__item-text">
+                                        <p>A deep understanding of your business and the development of unique solutions tailored to your needs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers__item light swiper-slide">
+                                <div class="offers__item-back">
+                                    <img class="lozad" data-src="./img/card-back-small.svg" alt="">
+                                </div>
+                                <div class="offers__item-hover">
+                                    <img class="lozad" data-src="./img/card-hover-light-small.png" alt="">
+                                </div>
+                                <div class="offers__item-main">
+                                    <div class="offers__item-num">03</div>
+                                    <div class="offers__item-title">Digital <br>security</div>
+                                    <div class="offers__item-text">
+                                        <p>Protecting your data and processes at every level of the information system</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers__item dark swiper-slide">
+                                <div class="offers__item-back">
+                                    <img class="lozad" data-src="./img/card-back-small.svg" alt="">
+                                </div>
+                                <div class="offers__item-hover">
+                                    <img class="lozad" data-src="./img/card-hover-dark-small.png" alt="">
+                                </div>
+                                <div class="offers__item-main">
+                                    <div class="offers__item-num">04</div>
+                                    <div class="offers__item-title">Support and maintenance</div>
+                                    <div class="offers__item-text">
+                                        <p>Long-term support and development of implemented solutions, adapting to market changes and your strategy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="purple-banner with-btn">
+            <div class="container">
+                <div class="purple-banner__content">
+                    <div class="purple-banner__right">
+                        <h2 class="purple-banner__title title">Our goal</h2>
+                        <a href="#feedback" class="purple-banner__btn btn btn-white  popup-open">
+                            <span>Contact sales</span>
+                        </a>
+                    </div>
+                    <div class="purple-banner__left">
+                        <div class="purple-banner__text">
+                            To become a reliable partner, helping you move forward confidently in a rapidly changing digital world. Together, we <span>create a digital future</span> that increases efficiency, reduces costs, and opens up new horizons for growth.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__decor">
+            <div class="footer__decor-item">
+                <img class="lozad" src="./img/footer-decor-left.svg" alt="">
+            </div>
+            <div class="footer__decor-item">
+                <img class="lozad" src="./img/footer-decor-right.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./img/footer-logo.png"  alt="Terol logo">
+            </div>
+            <div class="footer__bottom">
+                <nav aria-label="Footer navigation" class="footer__nav">
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <a href="" class="footer__nav-col-main">About </a>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Bussiness vision</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Contact us</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <a href="" class="footer__nav-col-main">Products</a>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">AI Inference Orchestration</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">MLOps Platform</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Client Computing</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Servers & Storage</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Components</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <a href="" class="footer__nav-col-main">Solutions</a>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">AI & ML</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Cybersecurity</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Backup & DR</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Gaming</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Sustainability Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <a href="" class="footer__nav-col-main">Services & Support</a>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Technical Services</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Advanced Services</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Training and Education</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Support center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__col">
+                    <div class="footer__col-head">Contacts</div>
+                    <div class="footer__col-item --location">1 Sukhumvit 25, Wattana, Bangkok 10110 Thailand</div>
+                    <a href="mailto:info@terol.co.th" class="footer__col-item --mail">info@terol.co.th</a>
+                    <div class="footer__col-item --schedule">09.00 am - 05.00 pm</div>
+                    <div class="footer__col-bottom">
+                        <a href="#feedback" class="footer__col-btn btn btn-white  popup-open">
+                            <span>Contact sales</span>
+                        </a>
+                        <a href="" class="footer__col-in">
+                            <img src="./img/in.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup popup__feedback" id="feedback" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
+            <div class="popup__wrap">
+                <div class="popup__content">
+                    <div class="container">
+                        <div class="popup__body">
+                            <button class="popup__close" type="button" aria-label="Close"></button>
+                            <div class="cta">
+                                <div class="cta__content">
+                                    <div class="cta__info">
+                                        <h3 class="cta__title title" id="feedback-title">Let's call each other</h3>
+                                        <div class="cta__descr">Leave your email and we will contact you</div>
+                                        <form action="#" class="cta__form form">
+                                            <label for="company-2" class="visually-hidden">Company</label>
+                                            <input type="text" id="company-2" name="company" class="form__input" placeholder="Company" required>
+                                            <label for="email-2" class="visually-hidden">Email</label>
+                                            <input type="email" id="email-2" name="email" class="form__input input-email" placeholder="Email" required>
+                                            <button type="submit" class="form__btn">
+                                                <span class="visually-hidden">Submit</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cta__decor">
+                                        <video class="lozad" autoplay muted loop playsinline poster="./img/video-poster-2.jpg">
+                                            <source src="./video/GettyImages-1284024503.mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="popup__shade"></div>
+            </div>
+    </div>
+
+    <div class="popup popup__review" id="review" role="dialog" aria-modal="true" aria-labelledby="review-title">
+        <div class="popup__wrap">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button class="popup__close" type="button" aria-label="Close"></button>
+                    <div class="reviews__item">
+                        <h3 class="reviews__item-title" id="review-title"></h3>
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-content-text"></p>
+                        </div>
+                        <div class="reviews__item-auth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__shade"></div>
+        </div>
+    </div>
+
+    <script src="./libs/jquery-3.5.1.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="./libs/lozad/lozad.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

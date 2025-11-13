@@ -43,6 +43,43 @@ $(document).ready(function () {
         },
     });
 
+    const offersSlider = new Swiper(".offers__swiper", {
+        slidesPerView: 1.08,
+        spaceBetween: 12,
+        breakpoints: {
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3.1,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+    const vendorsSlider = new Swiper(".vendors__swiper", {
+        slidesPerView: 1.08,
+        spaceBetween: 12,
+        breakpoints: {
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3.1,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+    if(window.innerWidth < 767) {
+        const dataSystemSlider = new Swiper(".data-system__swiper", {
+            slidesPerView: 1.084,
+            spaceBetween: 12,
+        });
+    }
+
     const clientsSliders = [];
 
     $(".clients__swiper").each(function(index) {

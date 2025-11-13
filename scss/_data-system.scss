@@ -1,0 +1,93 @@
+.data-system {
+    margin: 7.5rem 0;
+    &__content {
+        position: relative;
+    }
+    &__title {
+        padding: 1.5rem 1.5rem 1.25rem 0.5625rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: calc((100% - 1.25rem * 3) / 4);
+        min-height: 15rem;
+    }
+    &__item {
+        padding: 1.5rem 1.5rem 1.25rem 1.5rem;
+        min-height: 15rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.75rem;
+        border: 1px solid var(--Neutral-100, #E9EFF5);
+        background: #FFF;
+        &:first-child {
+            opacity: 0;
+            pointer-events: none;
+        }
+        &-icon {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.25rem;
+            height: 3.25rem;
+            flex-shrink: 0;
+            background: var(--Brand-50);
+            border-radius: 0.5rem;
+            img {
+                width: 1.77738rem;
+                height: 1.77738rem;
+                flex-shrink: 0;
+                object-fit: contain;
+            }
+        }
+        &-text {
+            margin-top: auto;
+            font-size: 1.0625rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+        }
+    }
+}   
+
+@media (min-width: 768px)  {
+    .data-system {
+        &__swiper {
+            .swiper-wrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.25rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px)  {
+    .data-system {
+        margin: 5rem 0;
+        overflow: hidden;
+        &__title {
+            margin-bottom: 1.25rem;
+            padding: unset;
+            position: static;
+            top: unset;
+            left: unset;
+            display: flex;
+            align-items: center;
+            width: 90%;
+            min-height: unset;
+        }
+        &__swiper {
+            overflow: visible;
+        }
+        &__item {
+            padding: 1rem;
+            min-height: 13.75rem;
+            &:first-child {
+                display: none;
+            }
+        }
+    }  
+}

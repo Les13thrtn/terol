@@ -8,11 +8,13 @@
         font-size: 1.0625rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 140%; /* 1.4875rem */
+        line-height: 140%;
     }
     &__main {
         margin-bottom: 1.25rem;
-        font-size: 4.75rem;
+        &:not(.about__main-regular) {
+            font-size: 4.75rem;
+        }
     }
     &__info {
         display: grid;
@@ -22,6 +24,17 @@
         font-style: normal;
         font-weight: 600;
         line-height: 150%;
+        &.w-60-40 {
+            grid-template-columns: 1.5fr 1fr;
+        }
+        &.w-50-40 {
+            gap: 6rem;
+            grid-template-columns: 1fr 0.8fr;
+        }
+        &.w-40-50  {
+            gap: 6rem;
+            grid-template-columns: 40% 50%;
+        }
         p {
 
         }
@@ -29,27 +42,80 @@
     &__btn {
         margin-top: 1.5rem;
     }
+    &__items {
+        margin-top: 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-item {
+            width: calc(25% + 1.25rem * 3);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: var(--Base-Dark-Opacity);
+            text-align: center;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; 
+            border-radius: 3.25rem;
+            border: 1px solid var(--Neutral-300);
+            &:before {
+                content: '';
+                display: block;
+                width: 0.5rem;
+                height: 0.5rem;
+                background: var(--Brand-800);
+                border-radius: 100%;
+            }
+            &:not(:first-child) {
+                margin-left: -1.25rem;
+            }
+        }
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about {
-        margin: 3.5rem 0;
+        margin: 5rem 0;
         &__title {
             margin-bottom: 0.5rem;
-            font-size: 0.875rem;
+            font-size: 1.0625rem;
         }
         &__main {
             margin-bottom: 1rem;
-            font-size: 2.125rem;
+            &:not(.about__main-regular) {
+                font-size: 2.125rem;
+            }
         }
         &__info {
             grid-template-columns: 1fr;
             gap: 0.5rem;
-            font-size: 0.875rem;
+            font-size: 1.0625rem;
+            &.w-60-40 {
+                grid-template-columns: 1fr;
+            }
+            &.w-50-40,
+            &.w-40-50   {
+                gap: 0.5rem;
+                grid-template-columns: 1fr;
+            }
         }
         &__btn {
             margin-top: 1.5rem;
             width: 100%;
+        }
+        &__items {
+            margin-top: 1rem;
+            flex-direction: column;
+            &-item {
+                width: 100%;
+                &:not(:first-child) {
+                    margin-left: 0rem;
+                }
+            }
         }
     }
 }

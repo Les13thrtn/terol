@@ -1,17 +1,14 @@
-.stages {
+.offers {
     margin: 7.5rem 0;
     &__title {
         margin-bottom: 1.75rem;
     }
     &__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1.25rem;
+        
     }   
-    &__card {
+    &__item {
         position: relative;
-        width: 100%;
-        aspect-ratio: 1 / 1.56;
+        aspect-ratio: 1.416 / 1;
         border-radius: 0.75rem;
         overflow: hidden;
         &-back {
@@ -47,7 +44,6 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             height: 100%;
             z-index: 2;
         }
@@ -79,102 +75,57 @@
             transition: 0.3s;
         }
         &-text {
-            padding: 0.75rem;
-            margin-top: auto;
+            padding: 1.25rem 0.75rem 0.75rem;
             display: grid;
             gap: 0.25rem;
-            &-item {
-                width: 100%;
-                padding: 0.625rem 0.75rem;
+            p {
                 color:  var(--Base-Dark-Opacity);
                 font-size: 0.875rem;
                 font-style: normal;
                 font-weight: 500;
-                line-height: 120%; /* 1.05rem */
-                border-radius: 0.5rem;
-                background: rgba(114, 159, 190, 0.10);
-                transition: 0.3s;
+                line-height: 120%;
             }
         }
     }
 }
-@media (min-width: 768px)  {
-    .stages {
-        &__card  {
+@media (min-width: 769px)  {
+    .offers {
+        &__item  {
             &:hover {
-                .stages__card-hover {
+                .offers__item-hover {
                     opacity: 1;
-                }
-            
-            }
-            &.light:hover {
-                .stages__card-text-item {
-                    background: rgba(255, 255, 255, 0.50);
                 }
             }
             &.dark:hover {
                 .stages__card-text {
                     color: var(--Base-White);
                 }
-                .stages__card-num,
-                .stages__card-title {
+                .offers__item-num,
+                .offers__item-title {
                     color: #fff;
                 }
-                .stages__card-text-item {
+                .offers__item-text p {
                     color: #fff;
-                    background: rgba(255, 255, 255, 0.10);
                 }
             }
         }
     }
 }
 @media (max-width: 767px)  {
-    .stages {
+    .offers {
         margin: 5rem 0;
+        overflow: hidden;
         &__title {
             margin-bottom: 1.5rem;
         }
-        &__content {
-            grid-template-columns: 1fr;
-        }   
-        &__card {
-            aspect-ratio: unset;
-            height: fit-content;
-            &-back,
-            &-hover {
-                display: none;
-            }
-            &-main {
-                padding: 0.5rem;
-                flex-direction: row;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 1rem;
-                border-radius: 0.75rem;
-                border: 1px solid var(--Neutral-100);
-                background: #FFF;
-            }
-            &-num {
-                margin: 0;
-                width: 3rem;
-                font-size: 2rem;
-                background: #FFF;
-            }
-            &-title  {
-                position: static;
-                width: calc(100% - 4rem);
-                font-size: 1rem;
-            }
+        &__swiper {
+            overflow: visible;
+        }
+        &__item {
             &-text {
-                padding: 0;
-                width: 100%;
-                &-item {
-                    padding: 0.5rem;
-                    font-size: 0.875rem;
-                    br {
-                        display: none;
-                    }
+                padding-top: 2rem;
+                p { 
+                    font-size: 1rem;
                 }
             }
         }
