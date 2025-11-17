@@ -3381,16 +3381,16 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 11.25rem;
-  height: 11.25rem;
+  width: 5.75rem;
+  height: 5.75rem;
   flex-shrink: 0;
   background-color: var(--Brand-50);
   border-radius: 1.875rem;
 }
 .error__img:before {
   content: "";
-  width: 6.15244rem;
-  height: 6.15238rem;
+  width: 3.5rem;
+  height: 3.5rem;
   flex-shrink: 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -3398,7 +3398,7 @@ input[type=number] {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='99' height='99' viewBox='0 0 99 99' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M49.2207 0V98.4375' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3cpath d='M24.6113 6.59264L73.8287 91.8446' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3cpath d='M6.59375 24.6097L91.8457 73.8271' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3cpath d='M0.00195312 49.2174L98.4395 49.2201' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3cpath d='M6.59375 73.8271L91.8457 24.6097' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3cpath d='M24.6087 91.8431L73.8304 6.59362' stroke='%23412BA8' stroke-width='7.5' stroke-miterlimit='10'/%3e%3c/svg%3e ");
 }
 .error__title {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   text-align: center;
   font-family: var(--font-Cuprum);
   font-size: 4rem;

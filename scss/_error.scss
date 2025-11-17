@@ -11,15 +11,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 11.25rem;
-        height: 11.25rem;
+        width: 5.75rem;
+        height: 5.75rem;
         flex-shrink: 0;
         background-color: var(--Brand-50);
         border-radius: 1.875rem;
         &:before {
             content: '';
-            width: 6.15244rem;
-            height: 6.15238rem;
+            width: 3.5rem;
+            height: 3.5rem;
             flex-shrink: 0;
             background-position: center;
             background-repeat: no-repeat;
@@ -28,7 +28,7 @@
         }
     }
     &__title {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         text-align: center;
         font-family: var(--font-Cuprum);
         font-size: 4rem;
