@@ -78,6 +78,11 @@ $(document).ready(function () {
             slidesPerView: 1.084,
             spaceBetween: 12,
         });
+
+        const cardsWaveSlider = new Swiper(".cards-wave__swiper", {
+            slidesPerView: 1.084,
+            spaceBetween: 12,
+        });
     }
 
     const clientsSliders = [];

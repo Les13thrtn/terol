@@ -77,6 +77,23 @@
             }
         }
     }
+    &.no-circle {
+        .platform__content {
+            height: fit-content;
+            padding: 2.25rem 2rem;
+        }
+        .platform__title {
+            margin: 0 auto;
+            position: relative;
+            top: unset;
+            left: unset;
+            width: 78%;
+            line-height: 120%;
+            &.is-white {
+                color: var(--Base-White);
+            }
+        }
+    }
 }
   
 @media (max-width: 767px) {
@@ -125,6 +142,17 @@
                 &:not(:last-child) {
                     border-bottom: 3px solid #FFF;
                 }
+            }
+        }
+         &.no-circle {
+            .platform__content {
+                height: fit-content;
+                padding: 2.5rem 1.25rem;
+            }
+            .platform__title {
+                width: 100%;
+                text-align: center;
+                line-height: 100%;
             }
         }
     }

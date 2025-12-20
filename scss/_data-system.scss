@@ -49,6 +49,30 @@
             font-weight: 600;
             line-height: 140%;
         }
+        &-small {
+            margin-top: 0.5rem;
+            color:  #222222cb;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            &.with-items {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            &-item  {
+                padding: 0.375rem 0.75rem;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                border-radius: 1.25rem;
+                background: var(--Brand-50, #EDF0FF);
+            }                      
+        }
     }
 }   
 
@@ -59,6 +83,11 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 1.25rem;
+            }
+        }
+        &__item {
+            &.is-big {
+                grid-column: span 2;
             }
         }
     }
@@ -83,10 +112,20 @@
             overflow: visible;
         }
         &__item {
+            height: auto;
             padding: 1rem;
             min-height: 13.75rem;
             &:first-child {
                 display: none;
+            }
+            &-small {
+                &.with-items {
+                    gap: 0.25rem;
+                }   
+                &-item  {
+                    padding: 0.25rem 0.5rem;
+                    font-size: 0.75rem;
+                }                      
             }
         }
     }  
