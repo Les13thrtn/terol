@@ -3143,6 +3143,13 @@ input[type=number] {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
   }
+  .data-system__title.is-big {
+    width: calc((100% - 1.25rem) / 2);
+  }
+  .data-system__title.with-border {
+    border: 1px solid var(--Neutral-100, #E9EFF5);
+    border-radius: 0.75rem;
+  }
   .data-system__item.is-big {
     grid-column: span 2;
   }
