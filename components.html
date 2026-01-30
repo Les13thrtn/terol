@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terol - Provider of IT Solutions</title>
+    <meta name="description" content="Provider of the best IT solutions since 2023. We build reliable and scalable infrastructure for businesses.">
+
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo">
+                    <img src="./img/logo.svg"  alt="Terol logo, go to homepage">
+                </a>
+                <div class="header__menu">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list" aria-label="Main navigation">
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">About</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Bussiness vision</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Contact us</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Products</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">AI Inference Orchestration</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">MLOps Platform</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Client Computing</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Servers & Storage</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Components</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">AI & ML</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Cybersecurity</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Backup & DR</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Gaming</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Sustainability Solutions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__nav-item with-sub">
+                                <a href="#" class="header__nav-link" aria-haspopup="true" aria-expanded="false">Services & Support</a>
+                                <ul class="header__nav-item-sub">
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Technical Services</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Advanced Services</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Training and Education</a>
+                                    </li>
+                                    <li class="header__nav-item-sub-item">
+                                        <a href="#" class="header__nav-item-sub-link">Support center</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__lang lang">
+                        <button class="lang__head" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu" aria-label="Language selector, current language: English">
+                            <div class="lang__head-content">
+                                <div class="lang__head-flag">
+                                    <img src="./img/GB.png"  alt="Flag of the United Kingdom">
+                                </div>
+                                <div class="lang__head-name">En</div>
+                            </div>
+                        </button>
+                        <ul class="lang__body" id="lang-menu" role="menu">
+                            <li role="none">
+                                <a href="" class="lang__item" role="menuitem">
+                                    <div class="lang__item-flag">
+                                        <img src="./img/Thailand.png" alt="Flag of Thailand">
+                                    </div>
+                                    <div class="lang__item-name">Th</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#feedback" class="header__btn btn btn-purple popup-open">
+                    <span>Contact sales</span>
+                </a>
+                <button class="header__burger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu-id">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="breadcrumbs">
+			<div class="container">
+				<div class="breadcrumbs__list">
+					<a href="/" class="breadcrumbs__item">Main</a>
+					<span class="breadcrumbs__text">Components</span>
+				</div>
+			</div>
+		</section>
+
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero__content">
+                    <div class="page-hero__top">
+                        <div class="page-hero__top-left">
+                            <h1 class="page-hero__title">Components</h1>
+                            <div class="page-hero__descr">
+                               High-Quality IT Components for Every Performance Need
+                            </div>
+                        </div>
+                        <div class="page-hero__top-text w-70">
+                            <p>
+                                Enterprise-grade CPUs, GPUs, memory, storage, networking cards, and controllers — sourced from world-leading manufacturers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page-hero__img">
+                        <picture class="lozad" data-iesrc="./img/page-hero-11.jpg" data-alt="">
+                            <source srcset="./img/page-hero-11.jpg" media="(min-width: 768px)">
+                            <source srcset="./img/page-hero-11.jpg" media="(min-width: 0px)">
+                        </picture>
+                    </div>
+                </div>
+                <div class="page-hero__items swiper">
+                    <div class="swiper-wrapper col-5">
+                        <a href="#cpu" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">CPUs</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#cpu2" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">CPUs</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#memory" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">Memory <br>(RAM)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#solid-state" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">Solid-State Drives (SSD)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#hard-drives" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">Hard Drives <br>(HDD)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#nic" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">NICs (Network Interface Cards)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#hba" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">HBAs (Host Bus Adapters)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#hca" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">HCAs (Host Channel Adapters / InfiniBand)</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                        <a href="#raid" class="page-hero__items-el js-anchor swiper-slide">
+                            <div class="page-hero__items-el-title">RAID Controllers</div>
+                            <div class="page-hero__items-el-arrow"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-block">
+            <div class="container">
+                <div class="info-block__content">
+
+                    <div id="cpu" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">CPUs</h2>
+                            <div class="info-block__item-descr">High-performance processors for desktops, servers, and workstations optimized for compute, virtualization, and AI workloads</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Use Cases</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">Server workloads</div>
+                                    <div class="info-block__item-dots-list-item with-border">Virtualization & cloud</div>
+                                    <div class="info-block__item-dots-list-item with-border">High-performance computing</div>
+                                    <div class="info-block__item-dots-list-item with-border">Client computing</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-41.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Intel <br>Xeon / Core</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-40.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">AMD <br>EPYC / Ryzen</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-1.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="cpu2" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">CPUs</h2>
+                            <div class="info-block__item-descr">Accelerators for AI, ML, graphics rendering, scientific computing, and gaming</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Use Cases</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">AI & ML acceleration</div>
+                                    <div class="info-block__item-dots-list-item with-border">3D modeling & visualization</div>
+                                    <div class="info-block__item-dots-list-item with-border">Scientific computing</div>
+                                    <div class="info-block__item-dots-list-item with-border">Gaming & streaming</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-39.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">NVIDIA <br>(RTX, A-series, L-series)</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-40.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">AMD <br>Radeon & Instinct</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-2.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="memory" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">Memory (RAM)</h2>
+                            <div class="info-block__item-descr">Reliable and scalable memory modules for servers, desktops, and workstations</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Types</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">DDR4 / DDR5</div>
+                                    <div class="info-block__item-dots-list-item with-border">ECC server RAM</div>
+                                    <div class="info-block__item-dots-list-item with-border">Registered / Unbuffered</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-14.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Samsung</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-35.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Micron</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-36.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Hynix</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-37.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Kingston</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-38.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Crucial</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-3.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="solid-state"  class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">Solid-State Drives (SSD)</h2>
+                            <div class="info-block__item-descr">High-speed, low-latency SSDs for OS boot, caching, and primary storage tiers</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Types</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">NVMe</div>
+                                    <div class="info-block__item-dots-list-item with-border">SATA SSD</div>
+                                    <div class="info-block__item-dots-list-item with-border">PCIe Gen4 / Gen5</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-14.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Samsung</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-41.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Intel</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-42.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Western Digital</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-43.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Kioxia</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-38.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Crucial</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-37.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Kingston</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-4.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="hard-drives" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">Hard Drives (HDD)</h2>
+                            <div class="info-block__item-descr">High-capacity HDDs for archival, storage arrays, and cost-efficient data retention</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Types</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">Enterprise HDD</div>
+                                    <div class="info-block__item-dots-list-item with-border">NAS drives</div>
+                                    <div class="info-block__item-dots-list-item with-border">Surveillance drives</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-44.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Seagate</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-42.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Western Digital</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-45.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Toshiba</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-5.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="nic" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">NICs (Network Interface Cards)</h2>
+                            <div class="info-block__item-descr">High-performance NICs for fast and secure data transmission across enterprise infrastructure</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Types</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">1GbE</div>
+                                    <div class="info-block__item-dots-list-item with-border">10GbE</div>
+                                    <div class="info-block__item-dots-list-item with-border">25GbE</div>
+                                    <div class="info-block__item-dots-list-item with-border">40GbE / 100GbE</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-41.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Intel</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-46.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Broadcom</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-47.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Mellanox <br>(NVIDIA Networking)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-6.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="hba" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">HBAs (Host Bus Adapters)</h2>
+                            <div class="info-block__item-descr">Adapters enabling servers to connect to SAN storage environments with high reliability</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Protocols</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">Fibre Channel (16G / 32G / 64G)</div>
+                                    <div class="info-block__item-dots-list-item with-border">SAS</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-46.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Broadcom</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-48.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">ATTO</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-49.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">QLogic</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-7.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="hca" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">HCAs (Host Channel Adapters / InfiniBand)</h2>
+                            <div class="info-block__item-descr">Ultra-low-latency InfiniBand adapters for HPC, AI clusters, and data-intensive workloads</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Use Cases</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">AI & ML clusters</div>
+                                    <div class="info-block__item-dots-list-item with-border">High-performance computing</div>
+                                    <div class="info-block__item-dots-list-item with-border">Low-latency data fabrics</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-39.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">NVIDIA <br>Mellanox</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-8.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                    <div id="raid" class="info-block__item">
+                        <div class="info-block__item-info">
+                            <h2 class="info-block__item-title title">RAID Controllers</h2>
+                            <div class="info-block__item-descr">Reliable RAID cards that ensure data protection and improved storage performance.</div>
+                            <div>
+                                <h3 class="info-block__item-sub-title">Levels</h3>
+                                <div class="info-block__item-dots-list mt-auto">
+                                    <div class="info-block__item-dots-list-item with-border">RAID 0,1,5,6,10,50,60</div>
+                                    <div class="info-block__item-dots-list-item with-border">Battery-backed and cache-enabled controllers</div>
+                                </div>
+                            </div>
+                            <div class="info-block__item-grid">
+                                <h3 class="info-block__item-sub-title">Top Brands</h3>
+                                <div class="info-block__item-grid-content">
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-46.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Broadcom / LSI MegaRAID</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-50.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Areca Technology</div>
+                                    </div>
+                                    <div class="info-block__item-grid-item">
+                                        <div class="info-block__item-grid-item-icon is-logo">
+                                            <img src="./img/partner-51.png" alt="" class="lozad">
+                                        </div>
+                                        <div class="info-block__item-grid-item-text">Adaptec</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-block__item-side with-img">
+                            <img src="./img/info-block-item-side-9.jpg" alt="" class="lozad">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <div class="container">
+                <h2 class="why-choose__title title">Why Choose Terol</h2>
+                <div class="why-choose__content col-6">
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/why-choose-icon-4.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Engineering guidance for compatibility & configuration</div>
+                    </div>
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/why-choose-icon-12.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Support for custom builds and integration</div>
+                    </div>
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/why-choose-icon-9.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Certified distributor partnerships</div>
+                    </div>
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/why-choose-icon-14.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Consistent stock availability</div>
+                    </div>
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/why-choose-icon-13.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Competitive pricing</div>
+                    </div>
+                    <div class="why-choose__item">
+                        <div class="why-choose__item-icon">
+                            <img src="./img/pulse-2.svg" alt="" class="lozad">
+                        </div>
+                        <div class="why-choose__item-text">Genuine OEM parts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__decor">
+            <div class="footer__decor-item">
+                <img class="lozad" src="./img/footer-decor-left.svg" alt="">
+            </div>
+            <div class="footer__decor-item">
+                <img class="lozad" src="./img/footer-decor-right.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__logo">
+                <img src="./img/footer-logo.png"  alt="Terol logo">
+            </div>
+            <div class="footer__bottom">
+                <nav aria-label="Footer navigation" class="footer__nav">
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <div class="footer__nav-col-main">About </div>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Bussiness vision</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Contact us</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <div class="footer__nav-col-main">Products</div>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">AI Inference Orchestration</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">MLOps Platform</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Client Computing</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Servers & Storage</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Components</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <div class="footer__nav-col-main">Solutions</div>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">AI & ML</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Cybersecurity</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Backup & DR</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Gaming</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Sustainability Solutions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-col">
+                        <div class="footer__nav-col-head">
+                            <div class="footer__nav-col-main">Services & Support</div>
+                        </div>
+                        <ul class="footer__nav-col-list">
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Technical Services</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Advanced Services</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Training and Education</a>
+                            </li>
+                            <li class="footer__nav-col-list-item">
+                                <a href="" class="footer__nav-col-list-link">Support center</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="footer__col">
+                    <div class="footer__col-head">Contacts</div>
+                    <div class="footer__col-item --location">1 Sukhumvit 25, Wattana, Bangkok 10110 Thailand</div>
+                    <a href="mailto:info@terol.co.th" class="footer__col-item --mail">info@terol.co.th</a>
+                    <div class="footer__col-item --schedule">09.00 am - 05.00 pm</div>
+                    <div class="footer__col-bottom">
+                        <a href="#feedback" class="footer__col-btn btn btn-white  popup-open">
+                            <span>Contact sales</span>
+                        </a>
+                        <a href="" class="footer__col-in">
+                            <img src="./img/in.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup popup__feedback" id="feedback" role="dialog" aria-modal="true" aria-labelledby="feedback-title">
+            <div class="popup__wrap">
+                <div class="popup__content">
+                    <div class="container">
+                        <div class="popup__body">
+                            <button class="popup__close" type="button" aria-label="Close"></button>
+                            <div class="cta">
+                                <div class="cta__content">
+                                    <div class="cta__info">
+                                        <h3 class="cta__title title" id="feedback-title">Let's talk</h3>
+                                        <div class="cta__descr">Leave your email and we will contact you</div>
+                                        <form action="#" class="cta__form form">
+                                            <label for="company-2" class="visually-hidden">Company</label>
+                                            <input type="text" id="company-2" name="company" class="form__input" placeholder="Company" required>
+                                            <label for="email-2" class="visually-hidden">Email</label>
+                                            <input type="email" id="email-2" name="email" class="form__input input-email" placeholder="Email" required>
+                                            <button type="submit" class="form__btn">
+                                                <span class="visually-hidden">Submit</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="cta__decor">
+                                        <video class="lozad" autoplay muted loop playsinline poster="./img/video-poster-2.jpg">
+                                            <source src="./video/GettyImages-1284024503.mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="popup__shade"></div>
+            </div>
+    </div>
+
+    <div class="popup popup__review" id="review" role="dialog" aria-modal="true" aria-labelledby="review-title">
+        <div class="popup__wrap">
+            <div class="popup__content">
+                <div class="popup__body">
+                    <button class="popup__close" type="button" aria-label="Close"></button>
+                    <div class="reviews__item">
+                        <h3 class="reviews__item-title" id="review-title"></h3>
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-content-text"></p>
+                        </div>
+                        <div class="reviews__item-auth">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__shade"></div>
+        </div>
+    </div>
+
+    <script src="./libs/jquery-3.5.1.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="./libs/lozad/lozad.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

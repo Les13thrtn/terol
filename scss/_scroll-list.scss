@@ -10,6 +10,13 @@
         position: sticky;
         top: 5rem;
     }
+    &__descr {
+        margin-top: 0.75rem;
+        font-size: 1.0625rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; 
+    }
     &__list {
         flex: 1;
         &-item {
@@ -50,7 +57,10 @@
                     display: block;
                     color: rgba(34, 34, 34, 0.50);
                 }
-            }
+            } 
+        }
+        &-btn {
+            width: 100%;
         }
     }
 }
@@ -66,6 +76,9 @@
             width: 100%;
             position: static;
             top: unset;
+        }
+        &__descr {
+            font-size: 0.875rem;
         }
         &__list {
             width: 100%;

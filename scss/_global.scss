@@ -185,6 +185,9 @@
   span {
     color: var(--Brand-800);
   }
+  .span-light {
+    color: var(--Brand-200, #C5CAFF);
+  }
 }
 
 .title-small {
