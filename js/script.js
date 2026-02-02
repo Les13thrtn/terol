@@ -84,11 +84,6 @@ $(document).ready(function () {
             spaceBetween: 12,
         });
 
-        const heroItemsSlider = new Swiper(".page-hero__items", {
-            slidesPerView: 1.6,
-            spaceBetween: 12,
-        });
-
         const infoBlockSlider = new Swiper(".info-block__item-side-swiper", {
             slidesPerView: 1.2,
             spaceBetween: 8,
